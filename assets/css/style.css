@@ -601,7 +601,8 @@ section {
 # Portfolio / Projects
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+
 }
 
 .portfolio #portfolio-flters {
@@ -610,7 +611,7 @@ section {
   list-style: none;
   text-align: center;
   background: #ebe4ff;
-  border-radius: 50px;
+  border-radius: 40px;
   padding: 2px 15px;
 }
 
@@ -641,7 +642,12 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(79, 69, 91, 0.8);
+  /* background: rgba(79, 69, 91, 0.8); */
+  /* width: 200px;
+  height: 200px; */
+  width: 60%;
+  /* height: 50%; */
+ 
 }
 
 .portfolio .portfolio-wrap::before {
@@ -656,6 +662,7 @@ section {
   z-index: 2;
   opacity: 0;
 }
+
 
 .portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
