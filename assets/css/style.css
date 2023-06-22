@@ -331,6 +331,86 @@ h6 {
   margin-right: 20px;
   transition: 0.3s;
 }
+ .custom-button-youtube {
+  background-color: red;
+  color : white;
+  border-radius : 10px; 
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right:  20px;
+  padding-bottom:  10px;
+  width: fit-content;
+  text-align :center;
+  margin-right: 10px;
+  
+  
+}
+ .custom-button-android {
+  background-color: #3DDC84;
+  color : white;
+  border-radius : 10px; 
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right:  20px;
+  padding-bottom:  10px;
+  width: fit-content;
+  text-align :center;
+  margin-right: 10px;
+  
+}
+
+.custom-button-github {
+  background-color: #333;
+  color : white;
+  border-radius : 10px; 
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right:  20px;
+  padding-bottom:  10px;
+  width: fit-content;
+  text-align :center;
+  margin-right: 10px;
+  
+}
+
+ .custom-button-flutter {
+  background-color: #3DDC84;
+  color : white;
+  border-radius : 10px; 
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right:  20px;
+  padding-bottom:  10px;
+  width: fit-content;
+  text-align :center;
+  margin-right: 10px;
+  
+}
+
+  .custom-button-youtube a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .custom-button-github a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .custom-button-android a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .custom-button-flutter a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
 
 #hero .social-links a:hover {
   color: #662eff;
@@ -635,11 +715,11 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  /* background: rgba(79, 69, 91, 0.8); */
-  /* width: 200px;
-  height: 200px; */
+  background: rgba(79, 69, 91, 0.8);
+  width: 200px;
+  height: 200px;
   width: 60%;
-  /* height: 50%; */
+  height: 50%;
  
 }
 
