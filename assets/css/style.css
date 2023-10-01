@@ -278,7 +278,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/abstract-blurry-technology-1.jpg") top right no-repeat;
+  background: url("../img/a_tech.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -289,9 +289,11 @@ h6 {
   }
 }
 
+/* Fade effect */
+
 #hero:before {
   content: "";
-  background: rgba(241, 228, 255, 0.26);
+  background: rgba(0, 0, 0, 0.281);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -304,7 +306,7 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #662eff;
+  color: #ffffff;
 }
 
 #hero p {
