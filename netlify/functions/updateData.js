@@ -56,7 +56,7 @@ exports.handler = async (event) => {
     console.error(error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: 'Error updating JSON data' }),
+      body: JSON.stringify({ message: 'Error updating JSON data' , filepath : filePath, Error : error}),
     };
   }
 };
