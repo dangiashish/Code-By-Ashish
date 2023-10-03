@@ -1,7 +1,7 @@
 export async function handler(event) {
     try {
       const fs = require('fs');
-      const data = JSON.parse(fs.readFileSync('appdata/urls.json', 'utf8'));
+      const data = JSON.parse(fs.readFileSync('appurl.json', 'utf8'));
   
       // Parse the incoming request body (assumes JSON)
       const requestBody = JSON.parse(event.body);
@@ -10,7 +10,7 @@ export async function handler(event) {
       data.someKey = requestBody.newValue;
   
       // Write the updated data back to the file
-      fs.writeFileSync('appdata/urls.json', JSON.stringify(data));
+      fs.writeFileSync('appurl.json', JSON.stringify(data));
   
       return {
         statusCode: 200,
@@ -20,8 +20,7 @@ export async function handler(event) {
       console.log("ashishji " + error)
       return {
         statusCode: 500,
-        body : "" + error
-        // body: JSON.stringify({ message: 'Error updating JSON data' + error }),
+        body: JSON.stringify({ message: 'Error updating JSON data', error : error }),
       };
     }
   }
