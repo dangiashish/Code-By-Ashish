@@ -26,25 +26,25 @@
 //   }
   
 
-  import { readFileSync, writeFileSync } from 'fs';
-import { join } from 'path';
+const fs = require('fs');
+const path = require('path');
 
-export async function handler(event) {
+exports.handler = async (event) => {
   try {
     // Use path.join to create a correct relative path
-    const filePath = join(__dirname, 'appurl.json');
+    const filePath = path.join(__dirname, '../../appurl.json');
     
     // Parse the incoming request body (assumes JSON)
     const requestBody = JSON.parse(event.body);
 
     // Read the existing JSON file
-    const data = JSON.parse(readFileSync(filePath, 'utf8'));
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
     // Append the new data to the JSON array
     data.push(requestBody);
 
     // Write the updated data back to the file
-    writeFileSync(filePath, JSON.stringify(data, null, 2));
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 
     return {
       statusCode: 200,
@@ -54,7 +54,8 @@ export async function handler(event) {
     console.error(error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: 'Error updating JSON data', error : JSON.stringify(error) }),
+      body: JSON.stringify({ message: 'Error updating JSON data' }),
     };
   }
-}
+};
+
