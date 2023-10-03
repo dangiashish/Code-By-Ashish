@@ -20,7 +20,8 @@ export async function handler(event) {
       console.log("ashishji " + error)
       return {
         statusCode: 500,
-        body: JSON.stringify({ message: 'Error updating JSON data' + error }),
+        body : "" + error
+        // body: JSON.stringify({ message: 'Error updating JSON data' + error }),
       };
     }
   }
