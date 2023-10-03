@@ -32,7 +32,7 @@ const path = require('path');
 exports.handler = async (event) => {
   try {
     // Use path.join to create a correct relative path
-    const filePath = '/urls.json';
+    const filePath = '/appurl.json';
 
     
     // Parse the incoming request body (assumes JSON)
